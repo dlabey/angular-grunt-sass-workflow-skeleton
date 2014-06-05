@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Test Runner</title>
+    <link rel="stylesheet" href="../../node_modules/grunt-mocha/node_modules/mocha/mocha.css">
+</head>
+<body>
+<!-- Browser Reporter -->
+<div id="mocha"></div>
+<!-- Mocha -->
+<script src="../../node_modules/grunt-mocha/node_modules/mocha/mocha.js"></script>
+<script>
+    mocha.setup('bdd');
+</script>
+<script src="../../node_modules/grunt-mocha/phantomjs/bridge.js"></script>
+<!-- Spy, Stub, Mock Library -->
+<script src="../../node_modules/sinon/lib/sinon.js"></script>
+<script src="../../node_modules/sinon/lib/sinon/call.js"></script>
+<script src="../../node_modules/sinon/lib/sinon/behavior.js"></script>
+<script src="../../node_modules/sinon/lib/sinon/spy.js"></script>
+<script src="../../node_modules/sinon/lib/sinon/stub.js"></script>
+<script src="../../node_modules/sinon/lib/sinon/mock.js"></script>
+<!-- Expectation Library -->
+<script src="../../node_modules/chai/chai.js"></script>
+<script>
+    var expect = chai.expect;
+</script>
+<!-- What To Test - Unit -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+<script src="../../bower_components/angular-mocks/angular-mocks.js"></script>
+<script src="../../build/src/app.js"></script>
+<!-- Tests -->
+<!-- Run -->
+<script>
+    mocha.run();
+</script>
+</body>
+</html>

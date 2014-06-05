@@ -1,0 +1,10 @@
+/.idea
+/.sass-cache
+/bower_components
+/node_modules
+*.iml
+.DS_Store
+.eclipse
+.grunt
+.idea
+npm-debug.log
