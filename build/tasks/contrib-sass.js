@@ -5,14 +5,12 @@ module.exports = function(grunt) {
         },
         dev: {
             files: {
-                'build/src/styles.css': 'src/styles/**/*.scss',
-                'public/styles.css': 'src/styles/**/*.scss'
+                'build/dist/styles.css': 'build/tmp/styles.scss'
             }
         },
         prod: {
             files: {
-                'build/src/styles.css': 'src/styles/**/*.scss',
-                'public/styles.css': 'src/styles/**/*.scss'
+                'build/dist/styles.css': 'build/tmp/styles.scss'
             }
         }
     });

@@ -12,11 +12,11 @@ module.exports = function(grunt) {
         },
         scripts: {
             files: ['<%= jshint.scripts.src %>'],
-            tasks: ['jshint:scripts', 'concat:dev', 'concat:public', 'uglify:dev']
+            tasks: ['jshint:scripts', 'concat:dev', 'concat:publicJS', 'uglify:dev']
         },
         styles: {
             files: ['src/styles/**/*.scss'],
-            tasks: ['sass:dev']
+            tasks: ['concat:styles', 'sass:dev', 'concat:publicCSS']
         },
         tests: {
             files: ['test/**/*.js'],

@@ -8,19 +8,24 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', [
         'connect',
         'jshint:scripts',
-        'mocha',
         'concat:dev',
-        'concat:public',
+        'concat:publicJS',
         'uglify:dev',
+        'concat:styles',
         'sass:dev',
+        'concat:publicCSS',
+        'mocha',
         'watch'
     ]);
     grunt.registerTask('default', ['dev']);
     grunt.registerTask('test', 'mocha');
     grunt.registerTask('build', [
         'jshint:scripts',
+        'concat:publicJS',
         'concat:prod',
         'uglify:prod',
-        'sass:prod'
+        'concat:styles',
+        'sass:prod',
+        'concat:publicCSS'
     ]);
 };  

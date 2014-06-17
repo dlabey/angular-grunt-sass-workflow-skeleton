@@ -10,8 +10,8 @@ module.exports = function(grunt) {
                 preserveComments: true
             },
             files: {
-                'build/src/app.js': 'build/src/app.js',
-                'public/js/app.js': 'build/src/app.js'
+                'build/src/app.js': 'build/dist/app.js',
+                'public/js/app.js': 'build/dist/app.js'
             }
         },
         prod: {
@@ -20,8 +20,8 @@ module.exports = function(grunt) {
                 preserveComments: false
             },
             files: {
-                'build/src/app.min.js': 'build/src/app.js',
-                'public/js/app.min.js': 'build/src/app.js'
+                'build/src/app.min.js': 'build/dist/app.js',
+                'public/js/app.min.js': 'build/dist/app.js'
             }
         }
     });
